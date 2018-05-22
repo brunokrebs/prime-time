@@ -1,0 +1,93 @@
+<template id="prime-finder">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .prime-box {
+            background-color: #00FF39;
+            padding: 2rem;
+
+            margin-bottom: 15px;
+
+            width: 280px;
+            height: 280px;
+
+            border-radius: 50%;
+            border: solid #00B228 15px;
+
+            box-shadow: inset 0 10px 30px #000000;
+
+            font-family: 'Monda', sans-serif;
+        }
+
+        .col {
+            display: flex;
+            height: 100%;
+            width: 100%;
+
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        label {
+            text-align: center;
+            width: 80%;
+        }
+
+        .queryButton {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            height: 20%;
+            width: 80%;
+
+            background-color: #763FCF;
+
+            font-size: 75%;
+            color: white;
+            text-align: center;
+
+            cursor: pointer;
+            user-select: none;
+
+            border-radius: 3px;
+
+            box-shadow: 0 0 5px #000000;
+        }
+
+        input {
+            height: 15%;
+            width: 80%;
+            padding: 10px;
+
+            font-size: 90%;
+            text-align: center;
+
+            border: none;
+            border-radius: 3px;
+
+            box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset, 0 -1px 0 rgba(0,0,0,0.05) inset;
+
+            outline: none;
+        }
+    </style>
+    <div class="prime-box">
+        <div class="col">
+            <label>
+                IN NUM RANGE
+            </label>
+            <input class="range-start" type="text" value="2">
+            <input class="range-end" type="text" value="100000000">
+            <div class="queryButton">
+              HOW MANY PRIMES?
+            </div>
+            <span class="query-result" class="col-sm-8">
+                ---
+            </span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Prime Time</title>
+</head>
+
+<body>
+    <div id="flag">
+        <h1 id="prime-title">Prime Time</h1>
+    </div>
+
+    <div id="prime-widget-board">
+        <div class="prime-finder">
+            <span class="prime-finder-label">Prime Finder</span>
+            <prime-finder name="bob"></prime-finder>
+        </div>
+        <div class="prime-finder">
+            <span class="prime-finder-label">Prime Finder &#x2699;</span>
+            <prime-finder-worker name="tom"></prime-finder-worker>
+        </div>
+        <div class="prime-finder">
+            <span class="prime-finder-label">Find All Primes &#x2699;</span>
+            <all-primes name="tom">
+            </all-primes>
+        </div>
+
+    </div>
+    <div id="control-board">
+        <span class="instruction">Press SPACE to move race car</span>
+        <div id="racelane"><p id="counter"><span id="racecar">&#x1F3CE;&#x1F4A8;</span></p></div>
+
+    </div>
+
+    <script src="main.js"></script>
+    <script src="components/is-prime/is-prime.js"></script>
+    <script src="components/is-prime/is-prime-worker.js"></script>
+    <script src="components/all-primes/all-primes.js"></script>
+</body>
+
+</html>

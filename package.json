@@ -1,0 +1,26 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "karma start --browsers ChromeHeadless karma.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "karma": "^2.0.2",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "lite-server": "^2.3.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-spec-reporter": "0.0.32"
+  }
+}
